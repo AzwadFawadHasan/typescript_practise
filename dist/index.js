@@ -1,5 +1,4 @@
 "use strict";
-let user = [1, "John", true];
-user.push(2);
-console.log(user);
+;
+let mySize = 2;
 //# sourceMappingURL=index.js.map
