@@ -101,14 +101,27 @@ let mySize: Size = Size.Medium;
 // };
 
 //literal to limit the value of a variable
-type Quantity = 50 | 100 | 150;
-let quantity: Quantity = 50;
+// type Quantity = 50 | 100 | 150;
+// let quantity: Quantity = 50;
 
-function greet(name: string | null) {
-    if (name)
-        console.log(name.toUpperCase());
-    else
-        console.log("Hola!");
+// function greet(name: string | null) {
+//     if (name)
+//         console.log(name.toUpperCase());
+//     else
+//         console.log("Hola!");
+// }
+
+// greet(null)
+
+// optional chaining 
+
+type Customer = {
+    birthday: Date;
 }
 
-greet(null)
+function getCustomer(id: number): Customer | null {
+    return id === 0 ? null : { birthday: new Date() };
+}
+
+let customer = getCustomer(0);
+console.log(customer?.birthday?.getFullYear());
