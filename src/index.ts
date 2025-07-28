@@ -50,10 +50,15 @@ let mySize: Size = Size.Medium;
 // }
 
 //optional parameter
-function calculateTax(income: number, taxYear: number): number {
-    if (taxYear < 2022) {
-        return income * 0.1;
-    } else {
-        return income * 0.2;
-    }
-}
+// function calculateTax(income: number, taxYear: number): number {
+//     if (taxYear < 2022) {
+//         return income * 0.1;
+//     } else {
+//         return income * 0.2;
+//     }
+// }
+
+
+// objects
+
+let employee: { readonly id: number, name: string, retire: (date: Date) => void } = { id: 1, name: "John", retire: (date: Date) => { console.log(date); } };
