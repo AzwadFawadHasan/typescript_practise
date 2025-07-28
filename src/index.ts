@@ -85,17 +85,17 @@ let mySize: Size = Size.Medium;
 // }
 
 // customer type
-type Draggable = {
-    drag: () => void;
-}
-type Resizable = {
-    resize: () => void;
-}
+// type Draggable = {
+//     drag: () => void;
+// }
+// type Resizable = {
+//     resize: () => void;
+// }
 
-// intersection type : combination of two types
-type UIwidget = Draggable & Resizable;
+// // intersection type : combination of two types
+// type UIwidget = Draggable & Resizable;
 
-let textBox: UIwidget = {
-    drag: () => { console.log("dragging..."); },
-    resize: () => { console.log("resizing..."); }
-};
+// let textBox: UIwidget = {
+//     drag: () => { console.log("dragging..."); },
+//     resize: () => { console.log("resizing..."); }
+// };
