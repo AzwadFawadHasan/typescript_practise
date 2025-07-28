@@ -66,11 +66,20 @@ let mySize: Size = Size.Medium;
 
 // type aliases
 
-type Employee = {
-    readonly id: number,
-    name: string,
-    retire: (date: Date) => void
+// type Employee = {
+//     readonly id: number,
+//     name: string,
+//     retire: (date: Date) => void
+// }
+
+
+// let employee: { readonly id: number, name: string, retire: (date: Date) => void } = { id: 1, name: "John", retire: (date: Date) => { console.log(date); } };
+
+
+
+function kgToLbs(weight: number | string): number {
+    if (typeof weight === "number")
+        return weight * 2.2;
+    else
+        return parseInt(weight) * 2.2;
 }
-
-
-let employee: { readonly id: number, name: string, retire: (date: Date) => void } = { id: 1, name: "John", retire: (date: Date) => { console.log(date); } };
