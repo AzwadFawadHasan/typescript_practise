@@ -15,16 +15,21 @@
 
 // function render(document: any) {
 //     console.log(document);
-// }   
+// }
 
 
 
 //declaring an arry
-let numbers: number[] = [1, 2, 3, 4, 5];
-let randomArray = [];
-randomArray[0] = 1;
-// number[0] = "hello";
+// let numbers: number[] = [1, 2, 3, 4, 5];
+// let randomArray = [];
+// randomArray[0] = 1;
+// // number[0] = "hello";
 
-numbers.forEach((n) => {
-    console.log(n);
-});
+// numbers.forEach((n) => {
+//     console.log(n);
+// });
+
+
+let user: [number, string, boolean] = [1, "John", true];
+user.push(2); // Adding another element to the tuple
+console.log(user); // Output: [1, "John", true, 2]

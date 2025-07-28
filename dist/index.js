@@ -1,8 +1,5 @@
 "use strict";
-let numbers = [1, 2, 3, 4, 5];
-let randomArray = [];
-randomArray[0] = 1;
-numbers.forEach((n) => {
-    console.log(n);
-});
+let user = [1, "John", true];
+user.push(2);
+console.log(user);
 //# sourceMappingURL=index.js.map
