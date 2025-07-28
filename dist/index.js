@@ -1,8 +1,12 @@
 "use strict";
 ;
 let mySize = 2;
-let textBox = {
-    drag: () => { console.log("dragging..."); },
-    resize: () => { console.log("resizing..."); }
-};
+let quantity = 50;
+function greet(name) {
+    if (name)
+        console.log(name.toUpperCase());
+    else
+        console.log("Hola!");
+}
+greet(null);
 //# sourceMappingURL=index.js.map

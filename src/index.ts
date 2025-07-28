@@ -99,3 +99,16 @@ let mySize: Size = Size.Medium;
 //     drag: () => { console.log("dragging..."); },
 //     resize: () => { console.log("resizing..."); }
 // };
+
+//literal to limit the value of a variable
+type Quantity = 50 | 100 | 150;
+let quantity: Quantity = 50;
+
+function greet(name: string | null) {
+    if (name)
+        console.log(name.toUpperCase());
+    else
+        console.log("Hola!");
+}
+
+greet(null)
