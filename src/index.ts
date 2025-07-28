@@ -77,9 +77,25 @@ let mySize: Size = Size.Medium;
 
 
 
-function kgToLbs(weight: number | string): number {
-    if (typeof weight === "number")
-        return weight * 2.2;
-    else
-        return parseInt(weight) * 2.2;
+// function kgToLbs(weight: number | string): number {
+//     if (typeof weight === "number")
+//         return weight * 2.2;
+//     else
+//         return parseInt(weight) * 2.2;
+// }
+
+// customer type
+type Draggable = {
+    drag: () => void;
 }
+type Resizable = {
+    resize: () => void;
+}
+
+// intersection type : combination of two types
+type UIwidget = Draggable & Resizable;
+
+let textBox: UIwidget = {
+    drag: () => { console.log("dragging..."); },
+    resize: () => { console.log("resizing..."); }
+};
